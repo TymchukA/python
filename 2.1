@@ -1,0 +1,25 @@
+# python
+Labs 
+def scalar_product(matrix,n):
+    result = []
+    k=0
+    for i in range(0, n):
+        result.append([])
+        for j in range(0, n):
+            sum = 0
+            for k in range(0, n):
+                sum += matrix[i][k] * matrix[k][j]
+                    
+            result[i].append(sum)
+    return result
+
+n = int(input("Set size of matrix(>15)..."))
+print("Set matrix values by rows...")
+matrix = []
+for i in range(0, n):
+    matrix.append([])
+    for j in range(0, n):
+        matrix[i].append(int(input()))
+result=scalar_product(matrix,n)
+
+
