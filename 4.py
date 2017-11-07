@@ -7,4 +7,4 @@ class Person:
         self.doB = datetime.strptime(doB, "%d-%m-%Y")
     
     def ages(self):
-        return int((datetime.now() - self.birth_date).days / 365.25)
+        return int((datetime.now() - self.doB).days / 365.25)
