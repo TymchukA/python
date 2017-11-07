@@ -1,4 +1,3 @@
-
 from Person import Person
 
 class Teacher(Person):
@@ -9,6 +8,9 @@ class Teacher(Person):
         self.acad_status = str(acad_status)
         self.salary = float(salary)
         self.courses = float(courses)
+
+    def __str__(self):
+        return self.first_Name+" "+self.last_Name
 
 def get_faculty(objects, faculty):
     result = []
